@@ -1,0 +1,82 @@
+:root{
+    --color-primary: #000;
+    --color-secondary: #fff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* typography */
+h1{
+    font-size: 6em;
+    line-height: 1.3em;
+}
+
+h2{
+    font-size: 4em;
+    line-height: 1.3em;
+}
+
+h3{
+    font-size: 3em;
+    line-height: 1.3em;
+}
+
+.big{
+    font-size: 1.8em;
+    line-height: 1.2em;
+}
+
+/* button */
+.btn{
+    border: none;
+    padding: 17px 40px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.btn--primary{
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+.btn--secondary{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+
+/* shop products */
+.cardContainer{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    color: var(--color-secondary);
+}
+.card{
+    background-color: var(--color-secondary);
+    margin: 10px;
+    padding: 20px 20px 30px 20px;
+}
+
+.card--img{
+    width: 240px;
+    height: 240px;
+}
+
+.card--heading{
+    color: var(--color-primary);
+}
+
+.card--amount{
+    font-size: 1.8em;
+    font-weight: 400;
+    color: var(--color-primary);
+}
