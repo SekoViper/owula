@@ -1,17 +1,49 @@
 :root{
     --color-primary: #000;
     --color-secondary: #fff;
+    --Dharma-Gothic: Dharma;
+    --exon-outline: exon;
 }
+
+@font-face {
+    font-family: 'Dharma';
+    src: url("/css/Fonts/DharmaThin.woff");
+    font-style: normal;
+    font-weight: 100;   
+  }
+
+@font-face {
+    font-family: 'Dharmar';
+    src: url("/css/Fonts/DharmaRegular.woff");
+    font-style: normal;
+    font-weight: 600;   
+  }
+
+@font-face {
+    font-family: 'Dharmar';
+    src: url("/css/Fonts/DharmaBold.woff");
+    font-style: normal;
+    font-weight: 800;   
+  }
+
+@font-face {
+    font-family: 'exon';
+    src: url("/css/Fonts/ExonOutline-4BWx4.otf");
+    font-style: normal;
+    font-weight: 100;   
+  }
+
 
 html{
     font-size: 62.5%;
 }
 
 body{
-    margin: 0;
+    margin: 0 50px 0 50px;
     padding: 0;
     background-color: var(--color-primary);
     color: var(--color-secondary);
+    font-family: var(--Dharma-Gothic);
 }
 
 /* typography */
@@ -28,6 +60,11 @@ h2{
 h3{
     font-size: 3em;
     line-height: 1.3em;
+}
+
+h4{
+    font-family: var(--Dharma-Gothic);
+    font-size: 3em;
 }
 
 .big{
@@ -64,6 +101,7 @@ h3{
     background-color: var(--color-secondary);
     margin: 10px;
     padding: 20px 20px 30px 20px;
+    text-align: center;
 }
 
 .card--img{
@@ -85,8 +123,8 @@ h3{
 /* Navigation */
 
 nav {
-    background: #000;
-    color: #fff;
+    background: var(--color-primary);
+    color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
 }
@@ -96,7 +134,7 @@ nav .mainMenu li a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--color-secondary);
     font-size: 1.5rem;
 }
 
@@ -134,7 +172,7 @@ nav .mainMenu {
     flex-direction: column;
     justify-content: right;
     align-items: right;
-    background: #000;
+    background: var(--color-primary);
     transition: top 1s ease;
 }
 
@@ -159,4 +197,108 @@ nav .mainMenu .closeMenu {
     top: 20px;
     right: 20px;
 
+}
+
+
+/* post on the inside page */
+
+.post{
+    display: flex;
+}
+
+.post--img{
+    width:280px;
+    height: 300px;
+}
+
+.postMainHeading{
+    padding-right: 10rem;
+    line-height: 3.8rem;
+}
+
+.post--inside{
+    padding: 0 30px 0 30px;
+}
+
+.post--heading{
+    font-size: 3rem;
+}
+
+.post--link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.post--link::after{
+    content: ' →';
+    padding-left: 4px;
+    color: var(--color-secondary);
+}
+
+.postContainer{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.lineContainer{
+    margin-bottom: 60px;
+}
+
+.line{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.line--text1{
+    margin-top: 10px;
+}
+
+.line--text2{
+    margin-top: 80px;
+}
+
+.line--img{
+    margin-bottom: 4px;
+    margin-left: 20px;
+    height: 2px;
+}
+
+.productDisplay{
+    padding: 25px;
+    font-family: Dharma;
+}
+
+.insideHeading{
+    font-family: var(--exon-outline);
+    line-height: 2rem;
+    font-size: 3rem;
+}
+
+.imgRightPost{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.imgLeftPost{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.leftPostContainer{
+    margin-left: 25px;
+}
+
+.mainPost{
+    margin-top: 40px;
+}
+
+.mainSingle{
+    padding-left: 0px;
+    padding-right: 40px;
+}
+.singleImgRight{
+    padding-left: 0px;
+    padding-right: 40px;
 }
