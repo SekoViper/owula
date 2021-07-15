@@ -319,3 +319,12 @@ nav .mainMenu .closeMenu {
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
+
+/* MMXXI ARCHIVE */
+.mmxx{
+    font-family: var(--exon-outline);
+}
+.mmxx::after{
+    content: '→';
+    margin-left: 3rem;
+}
