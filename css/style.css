@@ -191,6 +191,10 @@ nav .mainMenu li a:hover {
     font-size: 1.6rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
@@ -301,4 +305,17 @@ nav .mainMenu .closeMenu {
 .singleImgRight{
     padding-left: 0px;
     padding-right: 40px;
+}
+
+
+/* social icon */
+.socialIcon{
+    padding: 20px 25px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.socialIcon--primary{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
