@@ -44,6 +44,7 @@ body{
     background-color: var(--color-primary);
     color: var(--color-secondary);
     font-family: var(--Dharma-Gothic);
+    font-size: 1.6rem;
 }
 
 /* typography */
@@ -327,4 +328,42 @@ nav .mainMenu .closeMenu {
 .mmxx::after{
     content: '→';
     margin-left: 3rem;
+}
+
+
+/* creed section */
+.creedContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.creedContent{
+    padding-right: 4rem;
+}
+
+.creedContent > h3{
+    margin-top: 0;
+    font-size: 3.9rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.creedImg{
+    background: url(/img/IMG\ G.png);
+}
+
+/* about */
+.aboutContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.aboutContent{
+    padding: 0px 60px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.readMore::after{
+    content: ' →';
+    margin-left: 10px;
 }
