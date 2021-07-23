@@ -68,6 +68,11 @@ h4{
     font-size: 3em;
 }
 
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
 .big{
     font-size: 1.8em;
     line-height: 1.2em;
@@ -369,4 +374,40 @@ a{
 .readMore::after{
     content: ' →';
     margin-left: 10px;
+}
+
+.container {
+    width: 91vw;
+    margin: 0 auto;
+}
+
+/* logo footer */
+.logoFooter {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLeft {
+    display: flex;
+    justify-content: space-between;
+    width: 23rem;
+    align-items: center;
+}
+
+.footerCross {
+    width: 4.5rem;
+    display: inline-block;
+}
+
+.footerSlogan {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.footerCookie {
+    height: 3rem;
+    display: inline-block;
 }
