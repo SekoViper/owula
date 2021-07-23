@@ -1,18 +1,15 @@
 <nav>
     <div class="logo"><h4 style="margin-left: 30px;"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="210"></h4></div>
-    <div class="openMenu"><i class="fa"></i><img src="img/menu-17.png" alt="" width="30" onclick="hideMenu()"></div>
-    <ul id="mainMenu" class="mainMenu" style="display:none">
-        <div class="logo">
-            <h4 style="margin-left: 30px;">
-                <img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="210">
-            </h4>
-        </div>             
-        <li class="menuItems"><a href="#">The Creed</a></li>
-        <li class="menuItems"><a href="#">Letters</a></li>
-        <li class="menuItems"><a href="#">Shop</a></li>
-        <li class="menuItems"><a href="#">Contact</a></li>
-        <div class="closeMenu">
-            <i class="fa"><img src="img/close.png" alt="" width="25"></i>
-        </div>
-    </ul>
-</nav> 
+    <div id="menuBtn" class="menuBtn" onclick="openMenu()">
+        <i class="fa"></i><img src="img/menu-17.png" alt="" width="30" >
+    </div>
+    <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
+        <i class="fa"><img src="img/close.png" alt="" width="25"></i>
+    </div>
+</nav>
+<ul id="mainMenu" class="mainMenu">           
+    <li class="menuItems"><a href="#">The Creed</a></li>
+    <li class="menuItems"><a href="#">Letters</a></li>
+    <li class="menuItems"><a href="#">Shop</a></li>
+    <li class="menuItems"><a href="#">Contact</a></li>
+</ul>

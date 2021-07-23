@@ -131,26 +131,27 @@ nav {
     align-items: center;
 }
 
-nav .mainMenu li a {
+.mainMenu li a {
     display: inline-block;
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-secondary);
-    font-size: 2.5rem;
-    line-height: 3;
-}
-.closeMenu{
-    margin-right: 30px;
+    font-size: 4.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 17px;
 }
 
-nav .openMenu {
+
+.menuBtn {
     font-size: 2rem;
     margin: 20px;
     cursor: pointer;
 }
 
-nav .mainMenu .closeMenu {
+.closeBtn {
     font-size: 3rem;
     cursor: pointer;
 }
@@ -162,12 +163,12 @@ nav .logo {
     cursor: pointer;
 }
 
-nav .mainMenu {
+.mainMenu {
     display: flex;
     list-style: none;
     height: 100vh;
     position: fixed;
-    top: 0;
+    top: 12rem;
     right: 0;
     left: 0;
     z-index: 10;
@@ -176,9 +177,10 @@ nav .mainMenu {
     align-items: right;
     background: var(--color-primary);
     transition: top 1s ease;
+    display: none;
 }
 
-nav .mainMenu .closeMenu {
+.mainMenu .closeBtn {
     display: block;
     position: absolute;
     top: 20px;
@@ -186,24 +188,24 @@ nav .mainMenu .closeMenu {
 
 }
 
-nav .openMenu {
+nav .menuBtn {
     display: block;
 }
-nav .mainMenu li a:hover {
+
+.closeBtn{
+    margin-right: 30px;
+    display: none;
+}
+
+.mainMenu li a:hover {
     background: none;
-    font-size: 1.6rem;
+    font-size: 4.7rem;
 }
 
 a{
     text-decoration: none;
 }
 
-nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
 
 
 /* post on the inside page */
