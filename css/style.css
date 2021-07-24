@@ -300,6 +300,8 @@ a{
 
 .line--text2{
     margin-top: 80px;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .line--img{
@@ -377,7 +379,7 @@ a{
 }
 
 .creedContent{
-    padding-right: 4rem;
+    padding-right: 3.8rem;
 }
 
 .creedContent > h3{
@@ -398,13 +400,20 @@ a{
 }
 .aboutContent{
     padding: 0px 60px 0 0;
-    font-size: 20px;
+    font-size: 1.7rem;
     line-height: 30px;
+    font-family: inerta;
 }
 
 .readMore::after{
     content: ' →';
     margin-left: 10px;
+    font-family: inerta;
+}
+.readMore{
+    font-family: inerta;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .container {
@@ -514,7 +523,6 @@ a{
 .homeContent .blogDate:hover {
     top: 2rem;
 }
-
 
 
 /* contact page */
