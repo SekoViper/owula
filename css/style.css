@@ -443,6 +443,7 @@ a{
     display: inline-block;
     width: 92%;
     height: 83%;
+    z-index: 2;
 }
 
 .homepageBlogImage:hover {
@@ -464,11 +465,21 @@ a{
     left: 16rem;
 }
 
+.dateBg {
+    background-color: black;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    height: 15rem;
+    width: 100%;
+    z-index: 1;
+}
+
 .homeContent .blogDate {
     position: absolute;
     top: 1.5rem;
     right: 2.5rem;
-    color: black;
+    color: white;
     width: 6rem;
     text-align: right;
 }
