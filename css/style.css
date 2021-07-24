@@ -3,6 +3,7 @@
     --color-secondary: #fff;
     --Dharma-Gothic: Dharma;
     --exon-outline: exon;
+    --inerta-normal: inerta;
 }
 
 @font-face {
@@ -29,6 +30,13 @@
 @font-face {
     font-family: 'exon';
     src: url("/css/Fonts/ExonOutline-4BWx4.otf");
+    font-style: normal;
+    font-weight: 100;   
+  }
+
+@font-face {
+    font-family: 'inerta';
+    src: url("/css/Fonts/inerta-light.otf");
     font-style: normal;
     font-weight: 100;   
   }
@@ -88,9 +96,11 @@ p {
 /* button */
 .btn{
     border: none;
-    padding: 17px 40px;
+    padding: 15px 40px;
     text-transform: uppercase;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+    cursor: pointer;
+    font-weight: 800;
 }
 
 .btn--primary{
@@ -170,9 +180,7 @@ nav {
 }
 
 nav .logo {
-    /* text-transform: uppercase; */
     margin: -30px;
-    /* font-size: 4rem; */
     cursor: pointer;
 }
 
@@ -329,9 +337,10 @@ a{
 
 /* social icon */
 .socialIcon{
-    padding: 20px 25px;
+    padding: 12px 25px;
     font-size: 3rem;
     font-weight: 600;
+    margin-right: 5px;
 }
 
 .socialIcon--primary{
@@ -397,6 +406,7 @@ a{
     height: 5rem;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 .footerCross {
@@ -476,6 +486,10 @@ a{
     z-index: 1;
 }
 
+.blogDate{
+    font-family: var(--exon-outline);
+}
+
 .homeContent .blogDate {
     position: absolute;
     top: 1.5rem;
@@ -489,3 +503,53 @@ a{
     top: 2rem;
 }
 
+
+
+/* contact page */
+.contactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.contactItem{
+    flex-basis: 33.3%;
+}
+
+.contactInfoHeading{
+    font-size: 2em;
+    margin: 0;
+}
+
+.contactInfo{
+    font-size: 1.8rem;
+    font-family: inerta;
+}
+
+.owulaTrend{
+    margin-top: 60px;
+}
+.contactUs{
+    margin-top: 60px;
+}
+
+/* form */
+input[type=email] {
+    width: 52%;
+    padding-bottom: 12px;
+    background-color: var(--color-primary);
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    color: var(--color-secondary);font-family: inerta;
+    
+  }
+
+input::placeholder{
+    font-family: inerta;
+}
+
+input[type=email]:focus {
+    outline: none;
+  }
