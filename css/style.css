@@ -399,16 +399,17 @@ a{
     align-items: center;
 }
 
-.footerLeft {
-    display: flex;
-    justify-content: space-between;
-    width: 23rem;
-    align-items: center;
+.footerCross {
+    width: 30rem;
+    display: inline-block;
 }
 
-.footerCross {
-    width: 4.5rem;
-    display: inline-block;
+.footerCross:hover {
+    transform: scale(1.02);
+}
+
+.footerCookie:hover {
+    transform: scale(1.2);
 }
 
 .footerSlogan {
