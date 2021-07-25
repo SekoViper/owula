@@ -67,13 +67,14 @@ h2{
 }
 
 h3{
-    font-size: 3em;
-    line-height: 1.3em;
+    font-size: 3rem;
+    line-height: 1.3rem;
 }
 
 h4{
     font-family: var(--Dharma-Gothic);
-    font-size: 3em;
+    font-size: 3rem;
+    margin: 0;
 }
 
 h5 {
@@ -107,11 +108,11 @@ p {
     color: var(--color-secondary);
     background-color: var(--color-primary);
 }
+
 .btn--secondary{
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
-
 
 /* shop products */
 .shopRow {
@@ -242,7 +243,6 @@ a{
 }
 
 
-
 /* post on the inside page */
 
 .post{
@@ -265,6 +265,7 @@ a{
 
 .post--heading{
     font-size: 3rem;
+    line-height: 3.5rem;
 }
 
 .post--link{
@@ -296,6 +297,7 @@ a{
 
 .line--text1{
     margin-top: 10px;
+    letter-spacing: 2px;
 }
 
 .line--text2{
@@ -348,6 +350,22 @@ a{
     padding-right: 40px;
 }
 
+.videoPost{
+    margin-top: 50px;
+}
+
+.iconContainer{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.iconItem:nth-of-type(1){
+    flex-grow: 50;
+}
+.iconItem:nth-of-type(2){
+    flex-grow: 1;
+}
 
 /* social icon */
 .socialIcon{
@@ -386,7 +404,7 @@ a{
     margin-top: 0;
     font-size: 3.9rem;
     font-weight: 600;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
 .creedImg{
