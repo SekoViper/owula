@@ -106,9 +106,13 @@ h3{
 }
 
 h4{
-    font-family: var(--Dharma-Gothic);
+    font-family: DharmaRegular;
+    margin-top: 0;
     font-size: 3rem;
-    margin: 0;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    margin-bottom: 3rem;
 }
 
 h5 {
@@ -131,11 +135,12 @@ p {
 /* button */
 .btn{
     border: none;
-    padding: 15px 40px;
+    padding: 10px 34px;
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 2.6rem;
     cursor: pointer;
     font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .btn--primary{
@@ -439,16 +444,42 @@ a{
     padding-right: 3.8rem;
 }
 
-.creedContent > h2,p{
+.creedContent p{
     font-family: DharmaRegular;
     margin-top: 0;
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.5;
+    letter-spacing: 1.6px;
 }
 
 .creedImg{
     background: url(/img/creed\ page.jpg);
+}
+
+.imageLineSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1px;
+    width: 92%;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.imageLineSection .line--img {
+    display: inline-block;
+    width: 87%;
+}
+
+.imageLineHeading {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.imageLineHeading img {
+    width: 95%;
 }
 
 /* about */
@@ -615,7 +646,7 @@ a{
 }
 
 .contactInfoHeading{
-    font-size: 2em;
+    /* font-size: 2em; */
     margin: 0;
 }
 
