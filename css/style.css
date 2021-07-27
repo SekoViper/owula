@@ -123,8 +123,11 @@ h5 {
 }
 
 p {
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.5;
+    font-family: inerta;
+    letter-spacing: 0.8px;
 }
 
 .big{
@@ -135,12 +138,21 @@ p {
 /* button */
 .btn{
     border: none;
-    padding: 10px 34px;
+    padding: 4px 34px;
     text-transform: uppercase;
-    font-size: 2.6rem;
     cursor: pointer;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 1.6px;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-family: DharmaRegular;
+    display: block;
+}
+
+
+
+.btn:hover {
+    transform: scale(1.05)
 }
 
 .btn--primary{
@@ -645,8 +657,11 @@ a{
     flex-basis: 33.3%;
 }
 
+.contactItem button {
+    margin-top: 3.9rem;
+}
+
 .contactInfoHeading{
-    /* font-size: 2em; */
     margin: 0;
 }
 
@@ -660,6 +675,10 @@ a{
 }
 .contactUs{
     margin-top: 60px;
+}
+
+.subscriptionForm {
+    margin-top: 1rem;
 }
 
 /* form */
@@ -684,7 +703,7 @@ input[type=email]:focus {
   }
 
 .footerContainer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
