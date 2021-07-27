@@ -509,10 +509,16 @@ a{
     display: flex;
     width: 25rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .homeBlogHeading:hover {
     left: 16rem;
+}
+
+
+.arrow-right {
+    height: 4rem
 }
 
 .dateBg {
