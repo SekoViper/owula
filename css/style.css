@@ -73,6 +73,11 @@ body{
     font-weight: 400;
 }
 
+.container {
+    width: 86vw;
+    margin: 0 auto;
+}
+
 .fixedHeight{
     overflow-y: hidden;
     max-height: 100vh;
@@ -208,6 +213,7 @@ nav {
     letter-spacing: 3px;
     word-spacing: 17px;
     font-family: exon;
+    padding-left: 0;
 }
 
 
@@ -233,7 +239,7 @@ nav .logo {
     padding-top: 2rem;
     top: 10rem;
     right: 0;
-    left: 83px;
+    left: 78px;
     z-index: 10;
     flex-direction: column;
     justify-content: right;
@@ -242,6 +248,7 @@ nav .logo {
     transition: top 1s ease;
     display: none;
     margin-top: 0;
+    padding-left: 0;
 }
 
 .mainMenu .closeBtn {
@@ -329,7 +336,7 @@ a{
 }
 
 .line--text2{
-    margin-top: 80px;
+    margin-top: 11px;
     font-size: 2rem;
     letter-spacing: 2px;
 }
@@ -337,7 +344,7 @@ a{
 .line--img{
     margin-bottom: 4px;
     margin-left: 20px;
-    height: 2px;
+    height: 0.5px;
 }
 
 .productDisplay{
@@ -428,27 +435,42 @@ a{
     padding-right: 3.8rem;
 }
 
-.creedContent > h3{
+.creedContent > h2,p{
+    font-family: DharmaRegular;
     margin-top: 0;
-    font-size: 3.9rem;
+    font-size: 3rem;
     font-weight: 600;
-    line-height: 1.9;
+    line-height: 1.5;
 }
 
 .creedImg{
-    background: url(/img/IMG\ G.png);
+    background: url(/img/creed\ page.jpg);
 }
 
 /* about */
 .aboutContainer{
+    margin-top: 8rem;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2rem;
 }
+
+.crossIconContainer{
+    text-align: center;
+    padding: 3rem;
+}
+
+.crossIcon{
+    width: 90px;
+    height: 90px;
+}
+
 .aboutContent{
-    padding: 0px 60px 0 0;
-    font-size: 1.7rem;
-    line-height: 30px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.5;
     font-family: inerta;
+    letter-spacing: 0.8px;
 }
 
 .readMore::after{
@@ -458,13 +480,11 @@ a{
 }
 .readMore{
     font-family: inerta;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     cursor: pointer;
-}
-
-.container {
-    width: 86vw;
-    margin: 0 auto;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #bbbbbb;
 }
 
 /* logo footer */
@@ -473,7 +493,7 @@ a{
     height: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
 
 .footerCross {
