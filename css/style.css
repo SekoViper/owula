@@ -231,9 +231,9 @@ nav .logo {
     height: 100vh;
     position: fixed;
     padding-top: 2rem;
-    top: 14rem;
+    top: 10rem;
     right: 0;
-    left: 0;
+    left: 83px;
     z-index: 10;
     flex-direction: column;
     justify-content: right;
@@ -257,7 +257,7 @@ nav .menuBtn {
 }
 
 .closeBtn{
-    margin-right: 30px;
+    margin-right: 0px;
     display: none;
 }
 
@@ -532,7 +532,7 @@ a{
 .homeBlogHeading {
     position: absolute;
     color: black;
-    bottom: -1.5rem;
+    bottom: -0.5rem;
     left: 14.5rem;
     font-weight: bold;
     display: flex;
