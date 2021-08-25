@@ -1,0 +1,6 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 38% 33% 30%;
+    color: var(--color-secondary);
+    margin: 0 auto;
+}

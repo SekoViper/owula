@@ -64,6 +64,7 @@ html{
 }
 
 body{
+    max-height: 100vh;
     margin: 0 50px 0 50px;
     padding: 0;
     background-color: var(--color-primary);
@@ -71,31 +72,7 @@ body{
     font-family: DharmaRegular;
     font-size: 1.6rem;
     font-weight: 400;
-}
-
-.container {
-    width: 86vw;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    width: 100%;
-}
-
-.col-8 {
-    width: 70%;
-    margin-right: 1%;
-}
-
-.col-4 {
-    width: 29%;
-    margin-left: 8%;
-}
-
-.fixedHeight{
     overflow-y: hidden;
-    max-height: 100vh;
 }
 
 /* typography */
@@ -121,13 +98,9 @@ h3{
 }
 
 h4{
-    font-family: DharmaRegular;
-    margin-top: 0;
+    font-family: var(--Dharma-Gothic);
     font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 1.6px;
-    margin-bottom: 3rem;
+    margin: 0;
 }
 
 h5 {
@@ -138,11 +111,8 @@ h5 {
 }
 
 p {
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 1.5;
-    font-family: inerta;
-    letter-spacing: 0.8px;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .big{
@@ -153,22 +123,12 @@ p {
 /* button */
 .btn{
     border: none;
-    padding: 4px 34px;
+    padding: 10px 34px;
     text-transform: uppercase;
+    font-size: 2.6rem;
     cursor: pointer;
     font-weight: 800;
-    letter-spacing: 1.6px;
-    font-size: 2.5rem;
-    line-height: 1.5;
-    font-family: DharmaRegular;
-    display: block;
-    background-color: white;
-}
-
-
-
-.btn:hover {
-    transform: scale(1.05)
+    letter-spacing: 1px;
 }
 
 .btn--primary{
@@ -189,10 +149,10 @@ p {
 
 .cardContainer{
     display: grid;
-    grid-template-columns: 24.3% 24.3% 24.3% 24.3%;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
     text-align: center;
     color: var(--color-secondary);
-    grid-gap: 12px;
+    grid-gap: 5px;
     width: 100%;
 }
 .card{
@@ -221,17 +181,6 @@ p {
     font-weight: bold;
 }
 
-.product-card-horizontal {
-    display: flex;
-    justify-content: space-around;
-    padding: 2.6rem 2rem;
-}
-
-.product-image-horizontal {
-    display: inline-block;
-    width: 30%;
-}
-
 
 /* Navigation */
 
@@ -257,7 +206,6 @@ nav {
     letter-spacing: 3px;
     word-spacing: 17px;
     font-family: exon;
-    padding-left: 0;
 }
 
 
@@ -275,20 +223,15 @@ nav .logo {
     cursor: pointer;
 }
 
-.logo h4 {
-    margin-bottom: 0;
-    line-height: 1;
-}
-
 .mainMenu {
     display: flex;
     list-style: none;
-    height: 70vh;
+    height: 100vh;
     position: fixed;
     padding-top: 2rem;
     top: 10rem;
     right: 0;
-    left: 100px;
+    left: 83px;
     z-index: 10;
     flex-direction: column;
     justify-content: right;
@@ -297,7 +240,6 @@ nav .logo {
     transition: top 1s ease;
     display: none;
     margin-top: 0;
-    padding-left: 0;
 }
 
 .mainMenu .closeBtn {
@@ -328,9 +270,9 @@ a{
 
 
 /* post on the inside page */
+
 .post{
     display: flex;
-    margin-top: 0;
 }
 
 .post--img{
@@ -338,17 +280,9 @@ a{
     height: 300px;
 }
 
-.mt-8 {
-    margin-top: 8rem;
-}
-
-.bornToWin{
-    font-family: var(--exon-outline);
-    margin-bottom: 3.6rem;
-}
-
 .postMainHeading{
     padding-right: 10rem;
+    line-height: 3.8rem;
 }
 
 .post--inside{
@@ -375,7 +309,6 @@ a{
 .postContainer{
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-gap: 4rem;
 }
 
 .lineContainer{
@@ -394,7 +327,7 @@ a{
 }
 
 .line--text2{
-    margin-top: 11px;
+    margin-top: 80px;
     font-size: 2rem;
     letter-spacing: 2px;
 }
@@ -402,42 +335,7 @@ a{
 .line--img{
     margin-bottom: 4px;
     margin-left: 20px;
-    height: 0.5px;
-}
-
-.letter--line--img {
-    width: 91%;
-    margin-bottom: 4px;
-    margin-left: 20px;
-    height: 0.5px;
-}
-
-.letter--line--img--2 {
-    width: 74%;
-    margin-bottom: 0;
-    margin-left: 20px;
-    height: 0.5px;
-}
-
-.letter--line--img--3 {
-    width: 90%;
-    margin-bottom: 0;
-    margin-left: 20px;
-    height: 0.5px;
-}
-
-.letter--line--img--4 {
-    width: 90%;
-    margin-bottom: 0;
-    margin-left: 20px;
-    height: 0.5px;
-}
-
-.letter--line--img--5 {
-    width: 90%;
-    margin-bottom: 0;
-    margin-left: 20px;
-    height: 0.5px;
+    height: 2px;
 }
 
 .productDisplay{
@@ -453,14 +351,12 @@ a{
 
 .imgRightPost{
     display: grid;
-    grid-template-columns: 64% 35%;
-    grid-gap: 1%;
+    grid-template-columns: 65% 35%;
 }
 
 .imgLeftPost{
     display: grid;
-    grid-template-columns: 40% 59%;
-    grid-gap: 1%;
+    grid-template-columns: 35% 65%;
 }
 
 .leftPostContainer{
@@ -468,7 +364,7 @@ a{
 }
 
 .mainPost{
-    margin-top: 8rem;
+    margin-top: 40px;
 }
 
 .mainSingle{
@@ -480,12 +376,14 @@ a{
     padding-right: 40px;
 }
 
+.videoPost{
+    margin-top: 50px;
+}
 
 .iconContainer{
     display: flex;
     width: 100%;
-    align-items: center;
-    margin-top: 4rem;
+    align-items: stretch;
 }
 
 .iconItem:nth-of-type(1){
@@ -497,49 +395,24 @@ a{
 
 /* social icon */
 .socialMediaIcons {
-    margin-top: 0rem;
+    margin-top: 4rem;
 }
 
 .socialIcon{
-    margin: 0;
-    overflow: visible;
-    -webkit-appearance: button;
-    border: none;
-    padding: 4px 34px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 800;
-    letter-spacing: 1.6px;
-    font-size: 2.5rem;
-    line-height: 1.5;
-    font-family: DharmaRegular;
-    background-color: white;
-    display: inline-block;
-    margin-right: 5px;
-    margin-top: 3.9rem;
+    padding: 12px 25px;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 10px;
 }
 
-.socialBtn {
-    display: inline-block;
-    margin-right: 5px;
+
+.socialIcon--primary:hover {
+    background-color: red;
 }
 
 .socialIcon--primary{
     color: var(--color-primary);
     background-color: var(--color-secondary);
-}
-
-.iconItem {
-    cursor: pointer;
-}
-
-.iconItem:hover {
-    color: #d1c7c7;
-}
-
-.socialMediaIcons.iconItem > a {
-    display: inline-block;
-    margin-right: 10px;
 }
 
 /* MMXXI ARCHIVE */
@@ -562,141 +435,27 @@ a{
     padding-right: 3.8rem;
 }
 
-.creedContent p{
-    font-family: DharmaRegular;
+.creedContent > h3{
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 3.9rem;
     font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 1.6px;
+    line-height: 1.9;
 }
 
 .creedImg{
-    background: url(/img/creed\ page.jpg);
-}
-
-.imageLineSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    width: 92%;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-}
-
-.letterImageLineSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    width: 87%;
-    margin-bottom: 4.2rem;
-    margin-top: 1.8rem;
-    margin-bottom: 4.2rem;
-    margin-top: 2rem;
-}
-
-.letterImageLineSection-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    width: 77%;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-}
-
-.letterImageLineSection-3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    width: 79%;
-    margin-bottom: 0rem;
-    margin-top: 2rem;
-}
-
-.letterImageLineSection-4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1px;
-    width: 100%;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-}
-
-.letterImageLineSection-5 {
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.imageLineSection .line--img {
-    display: inline-block;
-    width: 87%;
-}
-
-.imageLineHeading {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.letterImageLineHeading {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.letterImageLineHeading-2 {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.letterImageLineHeading-3 {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.letterImageLineHeading-4 {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.imageLineHeading img {
-    width: 95%;
+    background: url(/img/IMG\ G.png);
 }
 
 /* about */
 .aboutContainer{
-    margin-top: 8rem;
     display: grid;
-    grid-template-columns: 49% 49%;
-    grid-gap: 2rem;
+    grid-template-columns: 50% 50%;
 }
-
-.crossIconContainer{
-    text-align: center;
-    padding: 3rem;
-}
-
-.crossIcon{
-    width: 90px;
-    height: 90px;
-}
-
 .aboutContent{
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 1.5;
+    padding: 0px 60px 0 0;
+    font-size: 1.7rem;
+    line-height: 30px;
     font-family: inerta;
-    letter-spacing: 0.8px;
 }
 
 .readMore::after{
@@ -706,15 +465,13 @@ a{
 }
 .readMore{
     font-family: inerta;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     cursor: pointer;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #bbbbbb;
 }
 
-.readMore:hover {
-    letter-spacing: 1.7px;
+.container {
+    width: 86vw;
+    margin: 0 auto;
 }
 
 /* logo footer */
@@ -723,7 +480,7 @@ a{
     height: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem 0 5rem 0;
+    margin-top: 5rem;
 }
 
 .footerCross {
@@ -773,7 +530,6 @@ a{
     width: 92.5%;
     height: 87%;
     z-index: 2;
-    transition: all 0.1s;
 }
 
 .homepageBlogImage:hover {
@@ -790,7 +546,6 @@ a{
     width: 18rem;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.1s;
 }
 
 .homeBlogHeading:hover {
@@ -824,7 +579,6 @@ a{
     color: white;
     width: 7rem;
     text-align: right;
-    transition: all 0.1s;
 }
 
 .homeContent .blogDate:hover {
@@ -843,11 +597,8 @@ a{
     flex-basis: 33.3%;
 }
 
-.contactItem button {
-    margin-top: 3.9rem;
-}
-
 .contactInfoHeading{
+    font-size: 2em;
     margin: 0;
 }
 
@@ -861,10 +612,6 @@ a{
 }
 .contactUs{
     margin-top: 60px;
-}
-
-.subscriptionForm {
-    margin-top: 1rem;
 }
 
 /* form */
@@ -889,7 +636,7 @@ input[type=email]:focus {
   }
 
 .footerContainer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding-top: 2rem;
     padding-bottom: 2rem;

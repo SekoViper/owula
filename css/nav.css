@@ -1,0 +1,99 @@
+nav {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    display: none;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.menuItems{
+    font-size: 5rem;
+}
+
+
+nav .logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    background: var(--color-primary);
+    transition: top 1s ease;
+}
+
+nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+
+}
+nav .openMenu {
+    display: block;
+}
+nav .mainMenu li a:hover {
+    background: none;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .mainMenu .closeMenu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+} 
+
+ 

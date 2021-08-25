@@ -22,6 +22,15 @@ function hideShopMenuBtn() {
 }
 
 
+window.goToShop = function () {
+    window.location = '/shop.html'
+}
+
+window.goToShopDetail = function () {
+    console.log('clicked');
+    window.location = '/shop-detail.html'
+}
+
 /* close menu */
 window.closeMenu = function closeMenu() {
     getMenu().style.display = "none";

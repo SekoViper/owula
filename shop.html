@@ -17,49 +17,69 @@
     
 </head>
 <body>
-    <nav>
-        <div class="logo"><h4 style="margin-left: 30px;"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="210"></h4></div>
-        <div id="menuBtn" class="menuBtn" onclick="openMenu()">
-            <i class="fa"></i><img src="img/menu-17.png" alt="" width="30" >
-        </div>
-        <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
-            <i class="fa"><img src="img/close.png" alt="" width="25"></i>
-        </div>
-    </nav>
-    <ul id="mainMenu" class="mainMenu">           
-        <li class="menuItems"><a href="creed.html">The Creed</a></li>
-        <li class="menuItems"><a href="letter.html">Letters</a></li>
-        <li class="menuItems"><a href="shop.html">Shop</a></li>
-        <li class="menuItems"><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="shop-row">
+    <div class="container">
+        <nav>
+            <div class="logo"><h4><a href="/index.html"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="140"></a></h4></div>
+            <div id="menuBtn" class="menuBtn" onclick="openMenu()">
+                <i class="fa"></i><img src="img/menu-17.png" alt="" width="22" >
+            </div>
+            <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
+                <i class="fa"><img src="img/close.png" alt="" width="22"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <ul id="mainMenu" class="mainMenu">           
+            <li class="menuItems"><a href="creed.html">The Creed</a></li>
+            <li class="menuItems"><a href="letter.html">Letters</a></li>
+            <li class="menuItems"><a href="shop.html">Shop</a></li>
+            <li class="menuItems"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
         <div class="cardContainer">
-            <div class="card">
-                <img src="/img/IMG C.png" alt="" class="card--img">
-                <p class="card--amount">200 GHS</p>
-                <h3 class="card--heading">BOYZ II MEN</h3>
-                <button class="btn btn--primary">SHOP</button>
+            <div class="product-card" style="background-color: white; width: 100%; height: 59rem;">
+                <div class="product-image" style="width: 90%; margin: 2rem auto">
+                    <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="">
+                </div>
+                <div class="product-content" style="color: black; display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+                    <div class="product-price"><p>GHS 200</p></div>
+                    <div class="product-title"><h1>BOYZ II MEN</h1></div>
+                    <button onclick="goToShopDetail()" class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
+                </div>
             </div>
 
-            <div class="card">
-                <img src="/img/IMG C.png" alt="" class="card--img">
-                <p class="card--amount">200 GHS</p>
-                <h3 class="card--heading">BOYZ II MEN</h3>
-                <button class="btn btn--primary">SHOP</button>
+            <div class="product-card" style="background-color: white; width: 100%; height: 59rem;">
+                <div class="product-image" style="width: 90%; margin: 2rem auto">
+                    <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="">
+                </div>
+                <div class="product-content" style="color: black; display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+                    <div class="product-price"><p>GHS 200</p></div>
+                    <div class="product-title"><h1>BOYZ II MEN</h1></div>
+                    <button onclick="goToShopDetail()" class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
+                </div>
             </div>
 
-            <div class="card">
-                <img src="/img/IMG C.png" alt="" class="card--img">
-                <p class="card--amount">200 GHS</p>
-                <h3 class="card--heading">BOYZ II MEN</h3>
-                <button class="btn btn--primary">SHOP</button>
+            <div class="product-card" style="background-color: white; width: 100%; height: 59rem;">
+                <div class="product-image" style="width: 90%; margin: 2rem auto">
+                    <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="">
+                </div>
+                <div class="product-content" style="color: black; display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+                    <div class="product-price"><p>GHS 200</p></div>
+                    <div class="product-title"><h1>BOYZ II MEN</h1></div>
+                    <button onclick="goToShopDetail()" class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
+                </div>
             </div>
 
-            <div class="card">
-                <img src="/img/IMG C.png" alt="" class="card--img">
-                <p class="card--amount">200 GHS</p>
-                <h3 class="card--heading">BOYZ II MEN</h3>
-                <button class="btn btn--primary">SHOP</button>
+            <div class="product-card" style="background-color: white; width: 100%; height: 59rem;">
+                <div class="product-image" style="width: 90%; margin: 2rem auto">
+                    <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="">
+                </div>
+                <div class="product-content" style="color: black; display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+                    <div class="product-price"><p>GHS 200</p></div>
+                    <div class="product-title"><h1>BOYZ II MEN</h1></div>
+                    <button onclick="goToShopDetail()" class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
+                </div>
             </div>
         </div>
     </div>

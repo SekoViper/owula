@@ -17,100 +17,112 @@
     
 </head>
 <body>
-    <nav>
-        <div class="logo"><h4 style="margin-left: 30px;"><a href="/index.html"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="210"></a></h4></div>
-        <div id="menuBtn" class="menuBtn" onclick="openMenu()">
-            <i class="fa"></i><img src="img/menu-17.png" alt="" width="30" >
-        </div>
-        <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
-            <i class="fa"><img src="img/close.png" alt="" width="25"></i>
-        </div>
-    </nav>
-    <ul id="mainMenu" class="mainMenu">           
-        <li class="menuItems"><a href="creed.html">The Creed</a></li>
-        <li class="menuItems"><a href="letter.html">Letters</a></li>
-        <li class="menuItems"><a href="/about.html">About</a></li>
-        <li class="menuItems"><a href="shop.html">Shop</a></li>
-        <li class="menuItems"><a href="contact.html">Contact</a></li>
-    </ul>
-    <section>
-        <h1 class="insideHeading">BORN TO WIN • July MMXXI</h1>
-    <div class="postContainer">
+    <div class="container">
+        <nav>
+            <div class="logo"><h4><a href="/index.html"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="140"></a></h4></div>
+            <div id="menuBtn" class="menuBtn" onclick="openMenu()">
+                <i class="fa"></i><img src="img/menu-17.png" alt="" width="22" >
+            </div>
+            <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
+                <i class="fa"><img src="img/close.png" alt="" width="22"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <ul id="mainMenu" class="mainMenu">           
+            <li class="menuItems"><a href="creed.html">The Creed</a></li>
+            <li class="menuItems"><a href="letter.html">Letters</a></li>
+            <li class="menuItems"><a href="shop.html">Shop</a></li>
+            <li class="menuItems"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <section class="container">
+        <h1 class="bornToWin">BORN TO WIN • July MMXXI</h1>
+    <div class="postContainer container">
         <div class="">
             <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h4>
-            <div class="lineContainer">
-                <p class="line line--text1">Quotes <img src="/img/line.jpg" alt="" class="line--img" width="620"></p>
+            <div class="letterImageLineSection">
+                <h4 class="letterImageLineHeading">Quotes</h4>
+                <img src="/img/line.jpg" alt="" class="letter--line--img">
             </div>
-             <div class="post">
+             <div class="post mt-8">
                 <img src="/img/IMG B.png" alt="" class="post--img">
                 <div class="post--inside">
-                   <h3 class="post--heading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL</h3>
-                   <p><a href="#" class="post--link">2 mins Read </a></p>
-                   <div class="">
-                       <p class="line line--text2">Fear Mor <img src="/img/line.jpg" alt="" class="line--img" width="333"></p>
-                   </div>
+                   <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL</h4>
+                   <p class="readMore">2 mins Read </p>
+                   <div class="letterImageLineSection-2">
+                        <h4 class="letterImageLineHeading-2">Fear Not</h4>
+                        <img src="/img/line.jpg" alt="" class="letter--line--img--2">
+                    </div>
                 </div>
              </div>
         </div>
-        <div class="productDisplay">
-            <div class="card">
-                <img src="/img/IMG C.png" alt="" class="card--img">
-                <p class="card--amount">200 GHS</p>
-                <h3 class="card--heading">BOYZ II MEN</h3>
-                <button class="btn btn--primary">SHOP</button>
+        <div class="product-card" style="background-color: white; width: 90%; height: 59rem;">
+            <div class="product-image" style="width: 90%; margin: 2rem auto">
+                <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="">
             </div>
-        </div> 
+            <div class="product-content" style="color: black; display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+                <div class="product-price"><p>GHS 200</p></div>
+                <div class="product-title"><h1>BOYZ II MEN</h1></div>
+                <button class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
+            </div>
+        </div>
     </div> 
-    <div class="imgRightPost mainPost">
+    <div class="imgRightPost mainPost container">
         <div class="rightPostContainer">
              <div class="post">
                 <div class="post--inside singleImgRight">
-                   <h3 class="post--heading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE 
-                    BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h3>
-                   <p><a href="#" class="post--link">2 mins Read </a></p>
+                   <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE 
+                    BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h4>
+                   <p class="readMore">2 mins Read </p>
                 </div>
              </div>
-             <div class="lineContainer">
-                <p class="line line--text1">She <img src="/img/line.jpg" alt="" class="line--img" width="620"></p>
+            <div class="letterImageLineSection-3">
+                <h4 class="letterImageLineHeading-3">She</h4>
+                <img src="/img/line.jpg" alt="" class="letter--line--img--3">
             </div>
         </div>
     
-        <div>
-            <img src="/img/IMG D.png" alt="" width="386" height="">
+        <div style="width: 100%;">
+            <img style="display: inline-block; width: 100%;" src="/img/IMG D.png" alt="">
         </div>
     </div>
-    <div class="imgLeftPost mainPost">
+    <div class="imgLeftPost mainPost mt-4">
         <div>
-            <img src="/img/IMG E.png" alt="" width="386" height="">
+            <img style="display: inline-block; width: 100%;" src="/img/IMG E.png" alt="">
         </div>
         <div class="leftPostContainer">
              <div class="post">
                 <div class="post--inside singleImgRight">
-                   <h3 class="post--heading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE 
-                    BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h3>
-                   <p><a href="#" class="post--link">2 mins Read </a></p>
+                   <h4 class="postMainHeading">FINGERING AND OTHER FOREPLAY SHENANIGANS</h4>
+                   <p class="readMore">2 mins Read </p>
                 </div>
              </div>
-             <div class="lineContainer">
-                <p class="line line--text1">She <img src="/img/line.jpg" alt="" class="line--img" width="620"></p>
+             <div class="letterImageLineSection-4">
+                <h4 class="letterImageLineHeading-4">Health</h4>
+                <img src="/img/line.jpg" alt="" class="letter--line--img--4">
             </div>
         </div>
     </div>
 
     <div>
-        <div class="videoPost">
+        <div class="video mt-8">
             <img src="/img/IMG F.png" alt="post video" width="100%" height="">
         </div>
-        <div class="lineContainer">
+        <!-- <div class="lineContainer">
             <p class="line line--text1">IN THE KNOW <img src="/img/line.jpg" alt="" class="line--img" width="92%"></p>
+        </div> -->
+        <div class="letterImageLineSection-5">
+            <h4 class="letterImageLineHeading-4">IN THE KNOW</h4>
+            <img src="/img/line.jpg" alt="" class="letter--line--img--5">
         </div>
         <div class="iconContainer">
             <div class="socialMediaIcons iconItem">
-            <a href="#" class="socialIcon socialIcon--primary">FB</a>
-            <a href="#" class="socialIcon socialIcon--primary">TW</a>
-            <a href="#" class="socialIcon socialIcon--primary">IN</a>
+            <a href="#" class="btn socialIcon--primary">FB</a>
+            <a href="#" class="btn socialIcon--primary">TW</a>
+            <a href="#" class="btn socialIcon--primary">IN</a>
             </div>
-            <div class="iconItem"><h3 class="mmxx">MMXXI ARCHIVE</h3></div>
+            <div class="iconItem"><h1 class="mmxx">MMXXI ARCHIVE</h1></div>
         </div>
     </div>
     </section>
