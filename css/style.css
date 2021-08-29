@@ -504,6 +504,23 @@ a{
     flex-grow: 1;
 }
 
+
+.product-card {
+    background: white; 
+    width: 90%; 
+    height: 59rem;
+}
+
+.product-image-container {
+    width: 90%; 
+    margin: 2rem auto;
+}
+
+.product-card-image {
+    display: inline-block; 
+    width: 100%;
+}
+
 /* social icon */
 .socialMediaIcons {
     margin-top: 0rem;
@@ -916,6 +933,10 @@ input[type=email]:focus {
         font-size: 2.5rem;
     }
 
+    h4 {
+        font-size: 2.2rem;
+    }
+
     p {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
@@ -1006,5 +1027,94 @@ input[type=email]:focus {
         color: black;
         font-weight: bold;
     }
-    
+
+    /* letter page */
+    .postContainer {
+        display: block;
+    }
+
+    .postText {
+        width: 100%;
+    }
+
+    .postMainHeading {
+        padding-right: 0;
+    }
+
+    .letterImageLineSection {
+        flex-direction: row-reverse;
+        width: 95%;
+    }
+
+    .letter--line--img {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .mt-8 {
+        flex-direction: column;
+    }
+    .post--img {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-image-container {
+        padding-top: 1.6rem;
+    }
+
+    .post--inside {
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .letterImageLineSection-2 {
+        margin: 0;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .letter--line--img--2, .letter--line--img--4 {
+        margin-left: 0;
+    }
+
+    .mainPost.hide-mobile{
+        display: none;
+    }
+
+    .mainPost {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftPostContainer {
+        margin-left: 0;
+    }
+
+    .letterImageLineSection-4 {
+        flex-direction: row-reverse;
+        margin-top: 0.5rem;
+    }
+
+    .letter--line--img--4 {
+        width: 77%;
+    }
+
+    .iconContainer {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socialMediaIcons.iconItem {
+        margin-bottom: 2rem;
+    }
+
+    .btn.socialIcon--primary{
+        padding: 4px 20px;
+    }
+
 }
