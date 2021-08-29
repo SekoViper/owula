@@ -150,6 +150,15 @@ p {
     line-height: 1.2em;
 }
 
+.bg-white {
+    background: white;
+    color: black;
+}
+
+.text-black {
+    color: black;
+}
+
 /* button */
 .btn{
     border: none;
@@ -963,6 +972,39 @@ input[type=email]:focus {
 
     .contactUs {
         margin-top: 0px;
+    }
+
+
+    /* creed page */
+    .creedContainer {
+        display: block;
+    }
+
+    .creedImg {
+        width: 100%;
+        height: 30rem;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .aboutContainer {
+        display: block;
+        margin-top: 4rem;
+    }
+
+    .crossIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .aboutLetters, .aboutShop {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .text-black.readMore {
+        color: black;
+        font-weight: bold;
     }
     
 }
