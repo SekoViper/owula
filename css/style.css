@@ -894,3 +894,75 @@ input[type=email]:focus {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+
+/* iphone x screen */
+@media only screen and (max-width: 375px) {
+    body {
+        margin: 0;
+        padding: 1rem 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 2rem;
+        padding: 4px 32px;
+    }
+
+    nav {
+        padding: 0 3px;
+    }
+
+    .mainMenu {
+        left: 0;
+        padding: 2px 3.3rem;
+    }
+
+    .mainMenu li a {
+        font-size: 3rem;
+    }
+
+
+    /* contact page */
+    .contactItem {
+        flex-basis: 100%;
+        margin-bottom: 5.5rem;
+    }
+
+    .subscriptionForm input {
+        width: 80%;
+    }
+
+    .contactItem button {
+        margin-top: 1.5rem;
+    }
+
+    .owulaTrend {
+        margin-top: 0px;
+    }
+
+    .contactUs {
+        margin-top: 0px;
+    }
+    
+}
