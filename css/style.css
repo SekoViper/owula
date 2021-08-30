@@ -1152,4 +1152,45 @@ input[type=email]:focus {
         grid-template-columns: 100%;
     }
 
+    /* homepage */
+    .whiteBg {
+        width: 100%;
+        left: 0;
+        height: 60rem;
+    }
+
+    .homepageBlogImage {
+        height: 86%;
+        width: 100%;
+    }
+
+    .homeBlogHeading {
+        left: 3rem;
+        bottom: 1rem;
+    }
+
+    .homeContent .blogDate {
+        right: 2rem;
+        /* z-index: 100000; */
+    }
+
+    .dateBg {
+        background-color: transparent;
+        z-index: 9;
+        top: 0;
+    }
+
+    /* menu */
+    .mainMenu {
+        height: calc(100vh - 10.5rem);
+        overflow-y: hidden;
+    }
+
+    .show-mobile.logoFooter {
+        position: absolute;
+        top: calc(100vh - 30rem);
+        width: 80%;
+        display: flex;
+    }
+
 }

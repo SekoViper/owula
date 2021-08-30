@@ -3,6 +3,7 @@ window.openMenu = function openMenu() {
     getMenu().style.display = "block";
     hideMenuBtn();
     showCloseBtn();
+    window.document.body.style.overflowY = 'hidden';
 }
 
 function showMenuBtn() {
@@ -36,6 +37,7 @@ window.closeMenu = function closeMenu() {
     getMenu().style.display = "none";
     hideCloseBtn();
     showMenuBtn();
+    window.document.body.style.overflowY = 'scroll';
 }
 
 
