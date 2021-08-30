@@ -242,6 +242,36 @@ p {
 }
 
 
+.shop-product-card {
+    background-color: white;
+    width: 100%;
+    height: 59rem;
+}
+
+.shop-product-image {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.shop-product-image img {
+    display: inline-block;
+    width: 100%;
+}
+
+.product-content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-btn {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
 /* Navigation */
 
 nav {
@@ -1115,6 +1145,11 @@ input[type=email]:focus {
 
     .btn.socialIcon--primary{
         padding: 4px 20px;
+    }
+
+    /* shop page */
+    .cardContainer{
+        grid-template-columns: 100%;
     }
 
 }
