@@ -73,6 +73,10 @@ body{
     font-weight: 400;
 }
 
+.hide-desktop {
+    display: none;
+}
+
 .container {
     width: 86vw;
     margin: 0 auto;
@@ -359,6 +363,10 @@ nav .menuBtn {
 .mainMenu li a:hover {
     background: none;
     font-size: 4.7rem;
+}
+
+.hide-desktop.show-mobile.logoFooter {
+    display: none;
 }
 
 a{
