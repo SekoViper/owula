@@ -249,7 +249,7 @@ p {
 .shop-product-card {
     background-color: white;
     width: 100%;
-    height: 59rem;
+    height: 54rem;
 }
 
 .shop-product-image {
@@ -316,6 +316,10 @@ nav {
 
 nav .logo {
     cursor: pointer;
+}
+
+.logoImg {
+    width: 140px;
 }
 
 .logo h4 {
@@ -814,11 +818,12 @@ a{
     display: inline-block;
 }
 
-
+/* 105 + 10 */
+/*  + 597 + 25 */
 /* homepage */
 .homeContent {
     position: relative;
-    height: calc(100vh -  2.5rem - 20rem);
+    height: calc(100vh - 2.5rem - 29rem);
 }
 
 .whiteBg {
@@ -932,6 +937,10 @@ a{
 }
 
 /* form */
+input {
+    border-radius: 0;
+}
+
 input[type=email] {
     width: 52%;
     padding-bottom: 12px;
@@ -964,7 +973,23 @@ input[type=email]:focus {
 @media only screen and (max-width: 375px) {
     body {
         margin: 0;
-        padding: 1rem 3rem;
+        padding: 0rem;
+    }
+
+    .navContainer {
+        padding: 0;
+        width: auto;
+    }
+
+    .main {
+        padding: 0rem 3rem;
+    }
+
+    .fixedHeight{
+        /* padding-bottom: 0;
+        height: calc(100vh - 10rem);
+        max-height: calc(100vh - 10rem) */
+        height: 100%;
     }
 
     h1 {
@@ -989,7 +1014,7 @@ input[type=email]:focus {
     }
 
     .container {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .btn {
@@ -999,6 +1024,10 @@ input[type=email]:focus {
 
     nav {
         padding: 0 3px;
+    }
+
+    .logoImg {
+        width: 100px;
     }
 
     .mainMenu {
@@ -1158,17 +1187,19 @@ input[type=email]:focus {
     /* shop page */
     .cardContainer{
         grid-template-columns: 100%;
+        grid-gap: 55px;
     }
 
     /* homepage */
     .whiteBg {
         width: 100%;
         left: 0;
-        height: 60rem;
+        height: 42rem;
+        margin-bottom: 0;
     }
 
     .homepageBlogImage {
-        height: 86%;
+        height: 82%;
         width: 100%;
     }
 
@@ -1199,6 +1230,259 @@ input[type=email]:focus {
         top: calc(100vh - 30rem);
         width: 80%;
         display: flex;
+    }
+    
+    .home.logoFooter {
+        margin: 3.5rem 0 2rem 0;
+    }
+
+    .home.logoFooter .mobile{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .container.homeContent.hide-desktop.show-mobile {
+        background-color: white;
+    }
+
+    .homeBlogHeading {
+        left: 3rem;
+        bottom: 2rem;
+    }
+
+    .dateDiv {
+        position: absolute;
+        right: 3px;
+        top: 5px;
+        z-index: 2;
+    }
+
+    .blogDate.mobile {
+        right: 3px;
+    }
+
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 414px){
+    .hide-mobile {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+
+    body {
+        margin: 0;
+        padding: 0rem 3rem;
+    }
+
+    .mainMenu {
+        left: 0;
+        padding-left: 28px;
+    }
+
+    .container.homeContent.hide-desktop.show-mobile {
+        background-color: white;
+        margin-bottom: 4rem;
+        margin-top: 10.5rem;
+    }
+
+    .homepageBlogImage {
+        height: 82%;
+        width: 100%;
+    }
+
+    .homeBlogHeading {
+        bottom: 1.5rem;
+        left: 3.5rem;
+    }
+
+    .homeBlogHeading:hover {
+        left: 4rem;
+    }
+
+
+     /* shop page */
+     .cardContainer{
+        grid-template-columns: 100%;
+        grid-gap: 55px;
+    }
+
+    /* .shop-product-card {
+        background-color: white;
+        width: 90%;
+        margin: 0 auto;
+        height: 50rem;
+    }
+
+    .shop-product-image {
+        margin-bottom: 0;
+    }
+
+    .product-price p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .product-btn {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    } */
+
+    /* letter page */
+    .postContainer {
+        display: block;
+    }
+
+    .postText {
+        width: 100%;
+    }
+
+    .postMainHeading {
+        padding-right: 0;
+    }
+
+    .letterImageLineSection {
+        flex-direction: row-reverse;
+        width: 95%;
+    }
+
+    .letter--line--img {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .mt-8 {
+        flex-direction: column;
+    }
+    .post--img {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-image-container {
+        padding-top: 1.6rem;
+    }
+
+    .post--inside {
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .letterImageLineSection-2 {
+        margin: 0;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    .letter--line--img--2, .letter--line--img--4 {
+        margin-left: 0;
+    }
+
+    .mainPost.hide-mobile{
+        display: none;
+    }
+
+    .mainPost {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftPostContainer {
+        margin-left: 0;
+    }
+
+    .letterImageLineSection-4 {
+        flex-direction: row-reverse;
+        margin-top: 0.5rem;
+    }
+
+    .letter--line--img--4 {
+        width: 77%;
+    }
+
+    .iconContainer {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socialMediaIcons.iconItem {
+        margin-bottom: 2rem;
+    }
+
+    .btn.socialIcon--primary{
+        padding: 4px 20px;
+    }
+
+
+    /* contact page */
+    .contactItem {
+        flex-basis: 100%;
+        margin-bottom: 5.5rem;
+    }
+
+    .subscriptionForm input {
+        width: 80%;
+    }
+
+    .contactItem button {
+        margin-top: 1.5rem;
+    }
+
+    .owulaTrend {
+        margin-top: 0px;
+    }
+
+    .contactUs {
+        margin-top: 0px;
+    }
+
+    .contactItem {
+        margin-bottom: 7rem;
+    }
+
+    .socialIcon {
+        border-radius: 0;
+    }
+
+
+    /* creed page */
+    .creedContainer {
+        display: block;
+    }
+
+    .creedImg {
+        width: 100%;
+        height: 30rem;
+        background-position: left;
+        background-size: cover;
+    }
+
+    .aboutContainer {
+        display: block;
+        margin-top: 4rem;
+    }
+
+    .crossIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .aboutLetters, .aboutShop {
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .text-black.readMore {
+        color: black;
+        font-weight: bold;
     }
 
 }
