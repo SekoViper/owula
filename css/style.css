@@ -959,6 +959,54 @@ input[type=email]:focus {
     padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .mainMenu {
+        left: 6.8rem;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .mainMenu {
+        left: 6rem;
+    }
+}
+
+@media only screen and (max-width: 847px) {
+    .mainMenu {
+        left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .mainMenu {
+        left: 4.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 686px) {
+    .mainMenu {
+        left: 4.2rem;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .show-mobile {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .mainMenu {
+        left: 4.7rem;
+    }
+}
 
 /* iphone x screen */
 @media only screen and (max-width: 375px) {
