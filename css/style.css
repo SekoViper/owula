@@ -637,6 +637,8 @@ a{
 
 .creedImg{
     background: url(/img/creed\ page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .imageLineSection {
