@@ -990,6 +990,14 @@ input[type=email]:focus {
     }
 }
 
+@media only screen and (max-width: 474px) {
+    /* contact page */
+    .contactItem {
+        flex-basis: 100%;
+        margin-bottom: 5.5rem;
+    }
+}
+
 @media only screen and (max-width: 426px) {
     .show-mobile {
         display: block;
@@ -1006,6 +1014,39 @@ input[type=email]:focus {
     .mainMenu {
         left: 4.7rem;
     }
+}
+
+@media only screen and (max-width: 425px) {
+    .hide-mobile {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+
+    .whiteBg-mobile {
+        left: 0;
+        height: 70vh;
+        width: 100%;
+    }
+    
+    .homepageBlogImage-mobile {
+        position: absolute; 
+        top: 11rem; 
+        width: 77%;
+    }
+
+    .homeBlogHeading.mobile {
+        height: 20px;
+        width: 10rem;
+        top: 54.5rem;
+        left: 7rem;
+    }
+
+    .dateBg {
+        background-color: transparent;
+    }
+
 }
 
 /* iphone x screen */
@@ -1231,9 +1272,9 @@ input[type=email]:focus {
     }
 
     .dateBg {
-        background-color: transparent;
         z-index: 9;
-        top: 0;
+        top: 13rem; 
+        left: 23rem;
     }
 
     /* menu */
@@ -1247,6 +1288,36 @@ input[type=email]:focus {
         top: calc(100vh - 30rem);
         width: 80%;
         display: flex;
+    }
+
+    .whiteBg-mobile {
+        height: 70vh;
+    }
+
+    .homepageBlogImage-mobile {
+        position: absolute; 
+        top: 11rem; 
+        width: 84%;
+    }
+
+    .homeBlogHeading.mobile {
+        left: 5rem;
+        height: 20px;
+        width: 10rem;
+        top: 59rem;
+    }
+
+    /* fix vertical overflow - relative position for safari */
+    html,
+    body {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+    }
+
+    .container.footer {
+        position: fixed;
+        bottom: 0%;
     }
 
 }
