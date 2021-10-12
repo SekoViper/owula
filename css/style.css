@@ -806,7 +806,7 @@ a{
     height: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem auto;
+    margin: 4rem auto;
     width: 86vw;
 }
 
@@ -985,6 +985,15 @@ input[type=email]:focus {
     left: 0;
     background-color: black;
     width: 100vw;
+}
+
+/* main letters page */
+.month-section {
+    margin-bottom: 8rem;
+}
+
+.month-section:last-of-type {
+    margin-bottom: 15rem;
 }
 
 @media only screen and (max-width: 1024px) {

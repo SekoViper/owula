@@ -41,6 +41,10 @@ window.closeMenu = function closeMenu() {
 }
 
 
+window.goToDetail = function () {
+    window.location = '/letter-detail.html'
+}
+
 function showCloseBtn() {
     document.getElementById("closeBtn").style.display = "block";
 }
