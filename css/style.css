@@ -240,6 +240,11 @@ p {
     padding: 2.6rem 2rem;
 }
 
+.shopDetailRow .product-card-horizontal {
+    background-color: white;
+    width: 100%;
+}
+
 .product-image-horizontal {
     display: inline-block;
     width: 30%;
@@ -275,6 +280,17 @@ p {
     margin-bottom: 5rem;
 }
 
+/* shop detail */
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.detail-card button {
+    width: 13rem;
+    margin-top: 3rem;
+}
 
 /* Navigation */
 
@@ -1013,6 +1029,29 @@ input[type=email]:focus {
         justify-items: center;
     }
 
+    /* product detail */
+    .shopDetailRow {
+        flex-direction: column;
+    }
+
+    .shopDetailRow > .col {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    .product-card-horizontal {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .product-image-horizontal {
+        width: 90%;
+        margin: 1.5rem auto 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 426px) {
@@ -1373,6 +1412,30 @@ input[type=email]:focus {
     .container.footer {
         position: fixed;
         bottom: 0%;
+    }
+
+
+    /* shop detail */
+    .shopDetailRow {
+        flex-direction: column;
+    }
+
+    .shopDetailRow > .col {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+
+    .product-card-horizontal {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .product-image-horizontal {
+        width: 90%;
+        margin: 1.5rem auto 2rem;
     }
 
 }
