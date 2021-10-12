@@ -985,6 +985,14 @@ input[type=email]:focus {
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .shop.cardContainer {
+        grid-template-columns: 47.8% 47.8%;
+        grid-gap: 4rem 3rem;
+        justify-items: center;
+    }
+}
+
 
 @media only screen and (max-width: 686px) {
     .mainMenu {
@@ -998,6 +1006,13 @@ input[type=email]:focus {
         flex-basis: 100%;
         margin-bottom: 5.5rem;
     }
+
+    .shop.cardContainer {
+        grid-template-columns: 100%;
+        grid-gap: 4rem;
+        justify-items: center;
+    }
+
 }
 
 @media only screen and (max-width: 426px) {
