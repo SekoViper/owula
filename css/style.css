@@ -342,7 +342,7 @@ nav .logo {
 .mainMenu {
     display: flex;
     list-style: none;
-    height: 70vh;
+    height: 75vh;
     position: fixed;
     padding-top: 2rem;
     top: 9rem;
@@ -357,6 +357,7 @@ nav .logo {
     display: none;
     margin-top: 0;
     padding-left: 0;
+    margin-block-end: 0;
 }
 
 .mainMenu .closeBtn {
@@ -805,7 +806,8 @@ a{
     height: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem 0 5rem 0;
+    margin: 5rem auto;
+    width: 86vw;
 }
 
 .footerCross {
@@ -975,6 +977,14 @@ input[type=email]:focus {
     bottom: 0;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.container.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1583,12 +1593,12 @@ input[type=email]:focus {
     }
 
     /* fix vertical overflow - relative position for safari */
-    html,
+    /* html,
     body {
         overflow: hidden;
         position: relative;
         height: 100%;
-    }
+    } */
 
     .container.footer {
         position: fixed;
