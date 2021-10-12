@@ -342,7 +342,7 @@ nav .logo {
 .mainMenu {
     display: flex;
     list-style: none;
-    height: 75vh;
+    height: 100%;
     position: fixed;
     padding-top: 2rem;
     top: 9rem;
