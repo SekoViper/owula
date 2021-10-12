@@ -304,6 +304,21 @@ nav {
     padding-bottom: 1rem;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0rem;
+    overflow: hidden;
+    width: calc(100% - 20rem);
+    padding: 0 10rem;
+    z-index: 9999999;
+    background-color: black;
+}
+
+.content {
+    margin-top: 13rem;
+}
+
 .mainMenu li a {
     display: inline-block;
     padding: 15px;
@@ -989,7 +1004,7 @@ input[type=email]:focus {
 
 /* main letters page */
 .month-section {
-    margin-bottom: 8rem;
+    margin-bottom: 16rem;
 }
 
 .month-section:last-of-type {
