@@ -781,12 +781,11 @@ a{
     display: grid;
     grid-template-columns: 49% 49%;
     grid-gap: 7rem;
-    width: 74vw;
 }
 
 .crossIconContainer{
     text-align: center;
-    padding: 3rem;
+    padding: 2.6rem;
 }
 
 .crossIcon{
