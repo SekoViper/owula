@@ -58,6 +58,26 @@
     font-weight: 100;   
   }
 
+@font-face {
+    font-family: 'made-canvas-light';
+    src: url("/css/Fonts/made-canvas-light.otf");
+    font-style: normal;
+    font-weight: 100;   
+}
+
+@font-face {
+    font-family: 'made-canvas-regular';
+    src: url("/css/Fonts/made-canvas-regular.otf");
+    font-style: normal;
+    font-weight: 400;   
+}
+
+@font-face {
+    font-family: 'Swiss 721 Black Extended';
+    src: url("/css/Fonts/swiss-721-black-extended.ttf");
+    font-style: normal;
+    font-weight: 600;   
+}
 
 html{
     font-size: 62.5%;
@@ -68,7 +88,7 @@ body{
     padding: 0;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    font-family: DharmaRegular;
+    font-family: made-canvas-light;
     font-size: 1.6rem;
     font-weight: 400;
 }
@@ -125,9 +145,9 @@ h3{
 }
 
 h4{
-    font-family: DharmaRegular;
+    font-family: "Swiss 721 Black Extended";
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 1.6px;
@@ -480,7 +500,7 @@ a{
 
 .line--img{
     margin-bottom: 4px;
-    margin-left: 20px;
+    margin-left: 0px;
     height: 0.5px;
 }
 
@@ -675,10 +695,12 @@ a{
 
 .imageLineSection {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
     padding-bottom: 1px;
-    width: 92%;
+    width: 100%;
     margin-bottom: 4rem;
     margin-top: 2rem;
 }
@@ -734,17 +756,19 @@ a{
 
 .imageLineSection .line--img {
     display: inline-block;
-    width: 87%;
+    width: 100%;
 }
 
 .line--img.about--line{
-    width: 81%;
+    width: 100%;
 }
 
 .imageLineHeading {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 0;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .letterImageLineHeading {
@@ -779,13 +803,15 @@ a{
 .aboutContainer{
     margin-top: 8rem;
     display: grid;
-    grid-template-columns: 49% 49%;
-    grid-gap: 7rem;
+    /* grid-template-columns: 49% 49%;
+    grid-gap: 2%; */
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
 }
 
 .crossIconContainer{
     text-align: center;
-    padding: 2.6rem;
+    padding: 2.6rem 0;
 }
 
 .crossIcon{
@@ -794,11 +820,11 @@ a{
 }
 
 .aboutContent{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.5;
-    font-family: inerta;
-    letter-spacing: 0.8px;
+    font-family: made-canvas-light;
+    letter-spacing: 0.4px;
 }
 
 .readMore::after{
@@ -1015,6 +1041,22 @@ input[type=email]:focus {
     margin-bottom: 15rem;
 }
 
+.mt-4-5 {
+    margin-top: 4.5rem;
+}
+
+.mt-7-5 {
+    margin-top: 8.5rem;
+}
+
+
+.creedHeading {
+    font-family: made-canvas-light;
+    font-weight: 400;        
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
 @media only screen and (max-width: 1024px) {
     .mainMenu {
         left: 6.8rem;
@@ -1069,7 +1111,7 @@ input[type=email]:focus {
 
     .letterImageLineSection {
         flex-direction: row-reverse;
-        width: 95%;
+        width: 100%;
     }
 
     .letter--line--img {
