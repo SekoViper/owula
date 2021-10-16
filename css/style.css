@@ -341,16 +341,16 @@ nav {
 
 .mainMenu li a {
     display: inline-block;
-    padding: 15px;
+    padding: 18px 15px;
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-secondary);
-    font-size: 4.5rem;
+    font-size: 2.3rem;
     line-height: 1.5;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     word-spacing: 17px;
-    font-family: exon;
+    font-family: "Swiss 721 Black Extended";
     padding-left: 0;
 }
 
@@ -435,7 +435,13 @@ nav .menuBtn {
 
 .mainMenu li a:hover {
     background: none;
-    font-size: 4.7rem;
+    font-size: 2.5rem;
+}
+
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    left: calc((100vw - 86vw )/ 2);
 }
 
 .hide-desktop.show-mobile.logoFooter {
