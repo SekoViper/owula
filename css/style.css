@@ -877,8 +877,15 @@ a{
 }
 
 .footerCross {
-    width: 15rem;
+    width: 25rem;
     display: inline-block;
+}
+
+.footer-line {
+    height: 0.5px;
+    width: calc(100% - 30rem); 
+    background-color: white; 
+    margin-top: 7px;
 }
 
 .footerCross:hover {
