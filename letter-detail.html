@@ -39,6 +39,7 @@
             <li class="menuItems"><a href="letter-detail.html">Letters</a></li>
             <li class="menuItems"><a href="shop.html">Shop</a></li>
             <li class="menuItems"><a href="contact.html">Contact</a></li>
+            <li class="menuItems"><a href="#">Owula Club</a></li>
 
             <div class="hide-desktop show-mobile logoFooter">
                 <img src="/img/slogan.png" alt="wolemi logo" class="footerCross">
@@ -47,14 +48,15 @@
         </ul>
     </div>
     <section class="container content">
-        <h1 class="bornToWin">BORN TO WIN • July MMXXI</h1>
+        <h1>BORN TO WIN • July MMXXI</h1>
     <div class="postContainer container">
         <div class="postText">
-            <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h4>
+            <h3>Treat Her With Respect, All The Time, Make Her Feel Special Always Like She Is The Best Thing On Earth </h4>
             <h4 class="postMainHeading  hide-desktop show-mobile">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE BEST</h4>
-            <div class="letterImageLineSection">
-                <h4 class="letterImageLineHeading">Quotes</h4>
-                <img src="/img/line.jpg" alt="" class="letter--line--img">
+            <p class="readMore hide-mobile mt-3">Read More</p>
+            <div class="imageLineSection about-us hide-mobile">
+                <h4 class="imageLineHeading">Quotes</h4>
+                <img src="/img/line.jpg" alt="" class="line--img about--line">
             </div>
 
             <div class="letter product-card show-mobile hide-desktop">
@@ -71,16 +73,34 @@
              <div class="post mt-8">
                 <img src="/img/IMG B.png" alt="" class="post--img">
                 <div class="post--inside">
-                   <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL</h4>
-                   <p class="readMore">2 mins Read </p>
-                   <div class="letterImageLineSection-2">
-                        <h4 class="letterImageLineHeading-2">Fear Not</h4>
-                        <img src="/img/line.jpg" alt="" class="letter--line--img--2">
-                    </div>
+                   <h3>Picking Good Shoes</h3>
+                   <div class="read-more-contracted">
+                        <p onclick= "openLettersReadMore()" class="readMore hide-mobile mt-3">Read More</p>
+                        <div class="imageLineSection about-us hide-mobile">
+                            <h4 class="imageLineHeading">AN FEAR MOR</h4>
+                            <img src="/img/line.jpg" alt="" class="line--img about--line">
+                        </div>
+                   </div>
+                   <div class="read-more-expanded">
+                        <p>Chivalry never died, some men just chose to ignore it. Through time, men have lied for God, country and – women. Today we reminisce the prime essence of manhood.</p>
+                        <p onclick= "openLettersReadLess()" class="readLess hide-mobile mt-3">Read Less</p>
+                        <div class="imageLineSection about-us hide-mobile">
+                            <h4 class="imageLineHeading">AN FEAR MOR</h4>
+                            <img src="/img/line.jpg" alt="" class="line--img about--line">
+                        </div>
+                   </div>
                 </div>
              </div>
         </div>
-        <div class="letter product-card show-desktop hide-mobile">
+        <div style="width: 24rem; padding: 3rem; padding-bottom: 1rem; display: flex; flex-direction: column; align-items: center;" class="letter-product-card show-desktop hide-mobile bg-white">
+            <img style="display: inline-block; width: 100%;" src="/img/IMG C.png" alt="" class="letter-product-img">
+            <div style="height: 100%; display: flex; flex-direction: column; align-items: center; padding-top: 3.2rem;" class="letter-product-content">
+                <h4 style="margin-bottom: 1rem;">GHS 200</h4>
+                <p style="margin-bottom: 3rem;" class="product-title">BOYZ II MEN</p>
+                <button style="padding: 1.5rem 3rem;" onclick="goToShopDetail()" class="btn btn--primary letter-shop product-btn">Shop</button>
+            </div>
+        </div>
+        <!-- <div class="letter product-card show-desktop hide-mobile">
             <div class="product-image-container">
                 <img class="product-card-image" src="/img/IMG C.png" alt="">
             </div>
@@ -89,20 +109,32 @@
                 <div class="product-title"><h1>BOYZ II MEN</h1></div>
                 <button class="btn btn--primary product-btn" style="margin-top: 3rem; margin-bottom: 5rem;">Shop</button>
             </div>
-        </div>
+        </div> -->
+
+        <!-- <div class="shop-product-card">
+            <div class="shop-product-image">
+                <img src="/img/IMG C.png" alt="">
+            </div>
+            <div class="product-content">
+                <div class="product-price"><h3>GHS 200</h3></div>
+                <div class="product-title"><p>BOYZ II MEN</p></div>
+                <button onclick="goToShopDetail()" class="btn btn--primary product-btn">Shop</button>
+            </div>
+        </div> -->
     </div> 
     <div class="imgRightPost mainPost container hide-mobile">
         <div class="rightPostContainer">
              <div class="post">
                 <div class="post--inside singleImgRight">
-                   <h4 class="postMainHeading">TREAT HER WITH RESPECT, ALL THE TIME, MAKE HER FEEL SPECIAL, LIKE SHE IS THE 
-                    BEST THING ON EARTH AND THE SWEETEST THING IN HEAVEN</h4>
-                   <p class="readMore">2 mins Read </p>
+                   <h3>Treat Her With Respect, All The Time, Make Her Feel Special Always
+                    Like She Is The Best Thing On Earth And The Sweetest Thing
+                    In Heaven</h3>
                 </div>
              </div>
-            <div class="letterImageLineSection-3">
-                <h4 class="letterImageLineHeading-3">She</h4>
-                <img src="/img/line.jpg" alt="" class="letter--line--img--3">
+             <p class="readMore hide-mobile mt-0">Read More</p>
+             <div class="imageLineSection about-us hide-mobile">
+                <h4 class="imageLineHeading">AN FEAR MOR</h4>
+                <img src="/img/line.jpg" alt="" class="line--img about--line">
             </div>
         </div>
     
@@ -117,14 +149,16 @@
         <div class="leftPostContainer">
              <div class="post">
                 <div class="post--inside singleImgRight">
-                   <h4 class="postMainHeading">FINGERING AND OTHER FOREPLAY SHENANIGANS</h4>
-                   <p class="readMore">2 mins Read </p>
+                   <h3>Treat Her With Respect, All The Time, Make
+                    Like She Is The Best Thing On Earth
+                    In Heaven</h3>
+                    <p class="readMore hide-mobile mt-0">Read More</p>
+                    <div class="imageLineSection about-us hide-mobile">
+                       <h4 class="imageLineHeading">Health</h4>
+                       <img src="/img/line.jpg" alt="" class="line--img about--line">
+                   </div>
                 </div>
              </div>
-             <div class="letterImageLineSection-4">
-                <h4 class="letterImageLineHeading-4">Health</h4>
-                <img src="/img/line.jpg" alt="" class="letter--line--img--4">
-            </div>
         </div>
     </div>
 
@@ -132,9 +166,9 @@
         <div class="video mt-8 hide-mobile">
             <img src="/img/IMG F.png" alt="post video" width="100%" height="">
         </div>
-        <div class="letterImageLineSection-5 hide-mobile">
-            <h4 class="letterImageLineHeading-4">IN THE KNOW</h4>
-            <img src="/img/line.jpg" alt="" class="letter--line--img--5">
+        <div class="imageLineSection about-us hide-mobile mt-2">
+            <h4 class="imageLineHeading">In the Know</h4>
+            <img src="/img/line.jpg" alt="" class="line--img about--line">
         </div>
         <div class="iconContainer">
             <div class="socialMediaIcons iconItem">
@@ -142,7 +176,7 @@
             <a href="#" class="btn socialIcon--primary">TW</a>
             <a href="#" class="btn socialIcon--primary">IN</a>
             </div>
-            <div class="iconItem"><h1 class="mmxx">MMXXI ARCHIVE</h1></div>
+            <div class="iconItem"><h3 class="mmxx">MMXXI ARCHIVE</h3></div>
         </div>
     </div>
     </section>

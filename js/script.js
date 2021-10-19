@@ -40,6 +40,16 @@ window.closeMenu = function closeMenu() {
     window.document.body.style.overflowY = 'scroll';
 }
 
+window.openLettersReadMore = function () {
+    document.getElementsByClassName("read-more-expanded")[0].style.display = "block";
+    document.getElementsByClassName("read-more-contracted")[0].style.display = "none";
+}
+
+window.openLettersReadLess = function () {
+    document.getElementsByClassName("read-more-expanded")[0].style.display = "none";
+    document.getElementsByClassName("read-more-contracted")[0].style.display = "block";
+}
+
 
 window.goToDetail = function () {
     window.location = '/letter-detail.html'
