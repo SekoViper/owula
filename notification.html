@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOTIFICATIONS</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/078a910440.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body class="creedPage">
+        <div class="container navbar">
+            <nav>
+                <div class="logo"><h4><a href="/index.html"><img src="img/FIXXIES OWULA WORDMARK.png" alt="" width="140"></a></h4></div>
+                <div class="navRight flexRow">
+                    <div class="notifications">
+                        <img class="notificationImg" src="img/owula-notifications-btn.png" alt="">
+                    </div>
+                    <div id="menuBtn" class="menuBtn" onclick="openMenu()">
+                        <i class="fa"></i><img class="menuImg" src="img/owula-menu-btn.png" alt="" >
+                    </div>
+                    <div id="closeBtn" class="closeBtn" onclick="closeMenu()">
+                        <i class="fa"></i><img class="menuImg" src="img/owula-menu-btn.png" alt="" >
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul id="mainMenu" class="mainMenu">           
+                <li class="menuItems"><a href="creed.html">The Creed</a></li>
+                <li class="menuItems"><a href="main-letters.html">Letters</a></li>
+                <li class="menuItems"><a href="shop.html">Shop</a></li>
+                <li class="menuItems"><a href="contact.html">Contact</a></li>
+                <li class="menuItems"><a href="#">Owula Club</a></li>
+
+                <div class="hide-desktop show-mobile logoFooter">
+                    <img src="/img/slogan.png" alt="wolemi logo" class="footerCross">
+                    <img src="/img/cookie-2.png" alt="cookie" class="footerCookie">
+                </div>
+
+                <div class="container menuFooter hide-mobile">
+                    <div class="logoFooter">
+                        <img src="/img/slogan.png" alt="wolemi logo" class="footerCross">
+                        <div class="footer-line"></div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="container content">
+            <div class="post mt-12">
+                <h1>TRENDING</h1>
+                <section>
+                    <p style="margin-bottom: 0.2rem;">Facebook Live</p>
+                    <div class="read-more-expanded" style="display: block;">
+                        <p>A discussion on breast cancer with Dr. Franklyn Wiredu </p>
+                        <p style="margin-top: 2rem;" onclick= "openLettersReadLess()" class="readLess hide-mobile mt-3">Read Less</p>
+                        <div class="imageLineSection about-us hide-mobile">
+                            <h4 class="imageLineHeading">NOVEMBER ELEVEN • MMXXI</h4>
+                            <img src="/img/line.jpg" alt="" class="line--img about--line">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p style="margin-bottom: 0.2rem;">Instagram Live</p>
+                    <div class="read-more-expanded" style="display: block;">
+                        <p>A discussion on breast cancer with Dr. Franklyn Wiredu </p>
+                        <p style="margin-top: 2rem;" onclick= "openLettersReadLess()" class="readLess hide-mobile mt-3">Read Less</p>
+                        <div class="imageLineSection about-us hide-mobile">
+                            <h4 class="imageLineHeading">NOVEMBER ELEVEN • MMXXI</h4>
+                            <img src="/img/line.jpg" alt="" class="line--img about--line">
+                        </div>
+                    </div>
+                </section>
+        </div>
+    <!-- footer -->
+        <div class="container footer fixed">
+            <div class="logoFooter">
+                <img src="/img/slogan.png" alt="wolemi logo" class="footerCross">
+                <div class="footer-line"></div>
+            </div>
+        </div>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

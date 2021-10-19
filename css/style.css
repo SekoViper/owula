@@ -481,6 +481,11 @@ a{
     height: 300px;
 }
 
+.mt-12 {
+    width: 50%;
+    flex-direction: column;
+}
+
 .mt-8 {
     margin-top: 8rem;
 }
