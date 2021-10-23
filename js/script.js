@@ -50,6 +50,17 @@ window.openLettersReadLess = function () {
     document.getElementsByClassName("read-more-contracted")[0].style.display = "block";
 }
 
+window.openQuotesReadMore = function () {
+    document.getElementsByClassName("quotes-read-more-expanded")[0].style.display = "block";
+    document.getElementsByClassName("quotes-read-more-contracted")[0].style.display = "none";
+}
+
+window.openQuotesReadLess = function () {
+    document.getElementsByClassName("quotes-read-more-expanded")[0].style.display = "none";
+    document.getElementsByClassName("quotes-read-more-contracted")[0].style.display = "block";
+}
+
+
 
 window.goToDetail = function () {
     window.location = '/letter-detail.html'
