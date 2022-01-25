@@ -1861,6 +1861,55 @@ input[type=email]:focus {
 
     .content {
         margin-top: 8rem;
+        padding-top: 2.5rem;
+    }
+
+
+    /* contact page */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.9rem;
+    }
+
+
+
+    .footer {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .row > .col-6:nth-child(even) {
+        margin-top: 7.2rem;
+    }
+
+    .row > .col-6:last-child() {
+        margin-bottom: 7rem;
+    }
+
+    .m-mb-5 {
+        margin-bottom: 8rem;
+    }
+
+    .contactContainer .btn {
+        margin-top: 4rem;
+    }
+
+    .contactContainer .btn {
+        margin-top: 2.7rem;
+    }
+
+    .owulaTrend {
+        margin-top: 35px;
     }
 
 }
@@ -1889,11 +1938,30 @@ input[type=email]:focus {
         font-size: 1.7rem;
     }
 
+    /* typography */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 14px 24px
+    }
 }
 
 
 @media only screen and (max-width: 320px) { 
     body {
         padding: 0;
+    }
+
+    /* typography */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 14px 17px;
     }
 }
