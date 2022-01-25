@@ -300,6 +300,10 @@ p {
     width: 91%;
 }
 
+.letter-product-img, .product-image-horizontal {
+    height: 24rem;
+}
+
 .product-content {
     color: black;
     display: flex;
@@ -496,6 +500,10 @@ a{
     margin-top: 8rem;
 }
 
+.letter-detail.mt-8 {
+    margin-top: 12rem;
+}
+
 .mt-4 {
     margin-top: 4rem;
 }
@@ -632,6 +640,10 @@ a{
     margin-top: 8rem;
 }
 
+.letter-detail.mainPost {
+    margin-top: 12rem;
+}
+
 .mainSingle{
     padding-left: 0px;
     padding-right: 40px;
@@ -646,7 +658,7 @@ a{
     display: flex;
     width: 100%;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
     margin-bottom: 9rem;
 }
 
@@ -999,7 +1011,8 @@ a{
 
 
 .arrow-right {
-    height: 3.2rem
+    height: 3.2rem;
+    display: none;
 }
 
 .dateBg {
@@ -1015,6 +1028,12 @@ a{
 
 .blogDate{
     font-family: var(--exon-outline);
+}
+
+.blogDate .creedHeading {
+    line-height: 1.4;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
 }
 
 .homeContent .blogDate {
@@ -1500,8 +1519,8 @@ input[type=email]:focus {
 /* iphone x screen */
 @media only screen and (max-width: 375px) {
     body {
-        margin: 0;
-        padding: 1rem 3rem;
+        /* margin: 0;
+        padding: 1rem 3rem; */
     }
 
     h1 {
@@ -1792,4 +1811,89 @@ input[type=email]:focus {
         margin: 1.5rem auto 2rem;
     }
 
+}
+
+
+@media only screen and (max-width: 473px) {
+    body {
+        margin: 0 33px;
+    }
+
+    .navbar {
+        width: 100%;
+        position: relative;
+        padding: 0;
+
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 425px) { 
+    nav {
+        height: 7.5rem;
+        padding-bottom: 0;
+        position: fixed;
+        top: 0;
+        left: 3rem;
+        width: 85.5%;
+    }
+
+    .navRight {
+        width: 6rem;
+    }
+
+    .mainMenu {
+        left: 3.2rem;
+        padding-top: 0;
+        margin-top: -2rem;
+    }
+    
+    .mainMenu li a {
+        font-size: 2rem;
+    }
+
+    .content {
+        margin-top: 8rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px) { 
+    body {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 25px;
+    }
+    nav {
+        height: 7.5rem;
+        padding-bottom: 0;
+    }
+
+    .navRight {
+        width: 5.5rem;
+    }
+
+    .mainMenu {
+        left: 0;
+        height: 100%;
+    }
+
+    .mainMenu li a {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) { 
+    body {
+        padding: 0;
+    }
 }
