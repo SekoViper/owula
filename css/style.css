@@ -1912,6 +1912,24 @@ input[type=email]:focus {
         margin-top: 35px;
     }
 
+    /* shop page */
+    .letter-product-card {
+        width: 33rem !important;
+        padding: 1.5rem !important;
+    }
+
+    .letter-product-img {
+        height: 35rem !important;
+    }
+
+    .letter-product-content {
+        padding-top: 8rem !important
+    }
+
+    .product-title {
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 375px) { 
@@ -1948,6 +1966,13 @@ input[type=email]:focus {
         font-size: 1.1rem;
         padding: 14px 24px
     }
+
+
+    /* shop page */
+    .letter-product-card {
+        width: 31rem !important;
+        padding: 1.5rem !important;
+    }
 }
 
 
@@ -1963,5 +1988,12 @@ input[type=email]:focus {
 
     .btn {
         padding: 14px 17px;
+    }
+
+
+       /* shop page */
+       .letter-product-card {
+        width: 27rem !important;
+        padding: 1.5rem 1rem !important;
     }
 }
