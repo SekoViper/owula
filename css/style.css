@@ -1513,6 +1513,10 @@ input[type=email]:focus {
         color: black;
         font-weight: bold;
     }
+
+    .text-right {
+        text-align: right;
+    }
 }
 
 
@@ -2005,6 +2009,44 @@ input[type=email]:focus {
         width: 8rem;
     }
 
+
+    /* home letter */
+    .no-mt{
+        margin-top: 0;
+    }
+
+    .white-mobile-Bg {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 93vh;
+        justify-content: space-between;
+    }
+
+    .letter-mobile-img {
+        display: inline-block;
+        width: 100%;
+        padding-top: 5rem;
+        height: calc(93vh - 15rem);
+    }
+
+    .mobile-title {
+        height: 6rem;
+        padding: 2rem;
+    }
+
+    .mobile-letters-header {
+        position: relative;
+    }
+
+    /* Top right text */
+    .top-right {
+        position: absolute;
+        top: 50px;
+        right: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 390px) { 
@@ -2056,6 +2098,21 @@ input[type=email]:focus {
     .letter-product-card {
         width: 30rem !important;
         padding: 1.5rem !important;
+    }
+
+
+    /* home letter */
+    .white-mobile-Bg {
+        height: 92vh;
+    }
+
+    .letter-mobile-img {
+        padding-top: 5rem;
+        height: calc(92vh - 12rem);
+    }
+
+    .mobile-title {
+        padding: 1rem 2rem;
     }
 }
 
