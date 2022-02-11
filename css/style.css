@@ -1819,6 +1819,10 @@ input[type=email]:focus {
         margin: 0 33px;
     }
 
+    .content {
+        margin-top: 1rem;
+    }
+
     .navbar {
         width: 100%;
         position: relative;
@@ -1833,6 +1837,46 @@ input[type=email]:focus {
     .logo img {
         width: 100px !important;
     }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    .letter-product-card {
+        width: 37rem !important;
+        padding: 2rem !important;
+    }
+
+
+
+    /* letter detail */
+    .letter-product-card {
+        margin-top: 70px;
+    }
+    /* 
+
+    .letter-product-img {
+        height: 35rem;
+    }
+
+    .letter-product-content {
+        padding-top: 6rem !important;
+    } */
+
+    .product-title {
+        margin-top: 3.5rem;
+    }
+
+    .product-btn {
+        margin-top: 2.5rem;
+    }
+
+
 }
 
 @media only screen and (max-width: 425px) { 
@@ -1914,7 +1958,7 @@ input[type=email]:focus {
 
     /* shop page */
     .letter-product-card {
-        width: 33rem !important;
+        width: 31.7rem !important;
         padding: 1.5rem !important;
     }
 
@@ -1932,6 +1976,12 @@ input[type=email]:focus {
 
 }
 
+@media only screen and (max-width: 390px) { 
+    .letter-product-card {
+        width: 29.3rem !important;
+    }
+}
+
 @media only screen and (max-width: 375px) { 
     body {
         padding-left: 0;
@@ -1941,6 +1991,9 @@ input[type=email]:focus {
     nav {
         height: 7.5rem;
         padding-bottom: 0;
+        left: 2rem;
+        padding-right: 80px;
+        padding-left: 4px;
     }
 
     .navRight {
@@ -1970,7 +2023,7 @@ input[type=email]:focus {
 
     /* shop page */
     .letter-product-card {
-        width: 31rem !important;
+        width: 30rem !important;
         padding: 1.5rem !important;
     }
 }
