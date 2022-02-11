@@ -1974,6 +1974,11 @@ input[type=email]:focus {
         margin-bottom: 1rem;
     }
 
+    /* notifications page */
+    .post.mt-12 {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 390px) { 
