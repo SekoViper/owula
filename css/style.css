@@ -1979,6 +1979,32 @@ input[type=email]:focus {
         width: 100%;
     }
 
+    /* owula club page */
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .creedHeading {
+        line-height: 1.5;
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .club-cross {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .club-cross .sword {
+        width: 8rem;
+    }
+
 }
 
 @media only screen and (max-width: 390px) { 
